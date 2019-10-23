@@ -739,4 +739,6 @@ const StickySidebar = (() => {
   
   // Global
   // -------------------------
-  window.StickySidebar = StickySidebar;
+  if ('undefined' !== typeof window) {
+    window.StickySidebar = StickySidebar;
+  }
